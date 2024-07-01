@@ -36,13 +36,13 @@ ScrollTrigger.refresh();
 function loaderAnimation(){
   document.addEventListener("mousemove",function(dets){
     gsap.to(".cursor",{
-      y:dets.y-400,
-      x:dets.x-700,
+      y:dets.y-300,
+      x:dets.x-600,
       cursor:"pointer",
     })
   })
 
-  var cursor=document.querySelector(".cursor");
+  var cursor=document.querySelector(".loader");
   cursor.addEventListener("click",function(){
     var tl=gsap.timeline();
     tl.to(".cursor",{

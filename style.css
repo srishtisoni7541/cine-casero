@@ -1,0 +1,1569 @@
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: font1;
+    src: url(./font1.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(./font2.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(./font3.ttf);
+}
+@font-face {
+    font-family: font4;
+    src: url(./font4.ttf);
+}
+@font-face {
+    font-family: font5;
+    src: url(./IvyMode-Light.ttf);
+}
+@font-face {
+    font-family: font6;
+    src: url(./IvyMode-Regular.ttf);
+}
+@font-face {
+    font-family: font7;
+    src: url(./IvyMode-SemiBold.ttf);
+}
+.loader{
+    height: 100vh;
+    width: 100%;
+    background-color: #212121;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* display: none; */
+}
+
+.loader h1{
+    font-size:6vw;
+    color: #fff;
+    font-family: "font5";
+    z-index: 9;
+}
+.loader .cursor{
+    height: 10vw;
+    width:  10vw;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color:#CBCAC5;
+    position: absolute;
+    mix-blend-mode: transparent;
+}
+.cursor h2{
+    font-family: "font3";
+}
+.page1{
+    min-height: 180vh;
+    width: 100%;
+    background-color:#DBDAD6;
+}
+.nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3vw;
+    /* flex-direction: column; */
+
+}
+.navright{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2vw;
+}
+.navright a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: "font3";
+    color: #6d6c6c;
+}
+.navright i{
+    font-size: 2vw;
+}
+.navright .circle{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    border: 2px solid #5b5959;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+}
+.circle:hover{
+    scale:2.5;
+}
+.page1overlay{
+    min-height: 100vh;
+    width: 100%;
+    background-color:transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 99; */
+}
+
+.page1overlay .imgcontainer{
+    min-height: 40vw;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+    top: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* position: relative; */
+
+}
+.imgleftcontainer{
+    height: 100%;
+    width: 33%;
+    /* background-color: rgb(21, 238, 227); */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2vw;
+    position: absolute;
+    left: 0;
+}
+.imgleftcontainer .img1{
+    height: 20vw;
+    width: 15vw;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-left: -5vw;
+    position: relative;
+    top: 5vw;
+    background-image: url(https://www.cinecasero.uy/img/g-01.jpg);
+    background-size: cover;
+}
+.imgleftcontainer .img2{
+    height: 17vw;
+    width: 17vw;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(https://www.cinecasero.uy/img/g-02.jpg);
+    background-size: cover;
+    /* left: 2vw; */
+    top: -2vw;
+}
+.imgleftcontainer .img3{
+    height: 12vw;
+    width: 17vw;
+    background-color: #fff;
+    border-radius: 20px;
+
+    margin-top: 18vw;
+    margin-left: -19vw;
+    background-image: url(https://www.cinecasero.uy/img/g-03.jpg);
+    background-size: cover;
+}
+.imgrightcontainer{
+    height: 100%;
+    width: 33%;
+    /* background-color: rgb(21, 238, 227); */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2vw;
+    position: absolute;
+    right: 0;
+}
+.imgrightcontainer .img5{
+    height:10vw;
+    width: 15vw;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 5vw;
+    background-image: url(https://www.cinecasero.uy/img/g-05.jpg);
+    background-size: cover;
+    /* top: -4vw; */
+}
+.imgrightcontainer .img6{
+    height: 20vw;
+    width: 15vw;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 13vw;
+    margin-left: -17vw;
+    background-image: url(https://www.cinecasero.uy/img/g-06.jpg);
+    background-size: cover;
+}
+.imgrightcontainer .img7{
+    height: 25vw;
+    width: 18vw;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 6vw;
+    margin-right: -7vw;
+    background-image: url(https://www.cinecasero.uy/img/g-07.jpg);
+    background-size: cover;
+    /* margin-left: 10vw; */
+}
+.img4center{
+    height: 30vw;
+    width:35vw;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    /* margin-left: 5vw; */
+}
+.img4center p{
+    font-size: 7vw;
+    font-weight: 200;
+    color: #fff;
+    font-family: "font3";
+    position: absolute;
+    top: 80vw;
+    text-align: center;
+}
+.img4center video{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.page1overlay h4{
+    position: relative;
+    top: 10vw;
+    font-size:3vw;
+    text-align: center;
+    /* left: 30vw; */
+    font-family: "font5";
+    font-weight: 100;
+}
+.page1overlay p{
+    font-size: 1.8vw;
+    position: relative;
+    top: 12vw;
+    text-align: center;
+    font-family: "font4";
+
+    font-weight: 100;
+}
+
+.page2{
+    height: 150vh;
+    width: 100%;
+    background-color:#1F1F1F;
+
+}
+.page2 h2{
+    font-family: "font3";
+    color: #817e7e;
+    font-size: 5vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    
+}
+.page2imgcontainer{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    /* gap:1vw; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left:5vw;
+    overflow: hidden;
+}
+.imgtopcontainer{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+}
+.imgbottomcontainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+.img{
+    height: 30vw;
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.img p{
+    text-align: center;
+    color: #fff;
+    font-family: "font5";
+    font-size: 1.4vw;
+    display: none;
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    margin-top: 10vw;
+}
+ .imgtopcontainer .img:nth-child(1){
+    rotate: -6deg;
+    background-image: url(https://www.cinecasero.uy/img/testimonios/01.jpg);
+    background-size: cover;
+    -webkit-transition: all ease 2s;
+    -o-transition: all ease 2s;
+    transition: all ease 2s;
+}
+
+.imgtopcontainer .img:nth-child(1):hover{
+    -webkit-transform:translateY(50px);
+        -ms-transform:translateY(50px);
+            transform:translateY(50px)
+
+}
+.imgtopcontainer .img:nth-child(1):hover p{
+    display: block;
+}
+.imgtopcontainer .img:nth-child(2){
+    rotate: 8deg;
+    background-image: url(https://www.cinecasero.uy/img/testimonios/02.jpg);
+    background-size: cover;
+    -webkit-filter: grayscale(30);
+            filter: grayscale(30);
+    -webkit-transition: all ease 2s;
+    -o-transition: all ease 2s;
+    transition: all ease 2s;
+}
+
+.imgtopcontainer .img:nth-child(2):hover{
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform:translateY(50px);
+        -ms-transform:translateY(50px);
+            transform:translateY(50px)
+
+}
+.imgtopcontainer .img:nth-child(2):hover p{
+    display: block;
+}
+
+.imgtopcontainer .img:nth-child(3){
+    rotate: -8deg;
+    background-image: url(https://www.cinecasero.uy/img/testimonios/03.jpg);
+    background-size: cover;
+    -webkit-transition: all ease 2s;
+    -o-transition: all ease 2s;
+    transition: all ease 2s;
+}
+.imgtopcontainer .img:nth-child(3):hover{
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+            transform:translateY(-50px);
+    -webkit-transform:translateX(-50px);
+        -ms-transform:translateX(-50px);
+            transform:translateX(-50px);
+    
+
+
+}
+.imgtopcontainer .img:nth-child(3):hover p{
+    display: block;
+}
+
+
+.imgbottomcontainer .img:nth-child(1){
+    rotate: 6deg;
+    background-image: url(https://www.cinecasero.uy/img/testimonios/04.jpg);
+    background-size: cover;
+    -webkit-transition: all ease 2s;
+    -o-transition: all ease 2s;
+    transition: all ease 2s;
+    -webkit-filter: grayscale(30);
+            filter: grayscale(30);
+
+}
+.imgbottomcontainer .img:nth-child(1):hover{
+    -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
+    -webkit-filter:none;
+            filter:none;
+}
+.imgbottomcontainer .img:nth-child(1):hover p{
+display: block;
+}
+.imgbottomcontainer .img:nth-child(2){
+    rotate:-5deg;
+    background-image: url(https://www.cinecasero.uy/img/testimonios/05.jpg);
+    background-size: cover;
+-webkit-transition: all ease 2s;
+-o-transition: all ease 2s;
+transition: all ease 2s;
+}
+.imgbottomcontainer .img:nth-child(2):hover{
+    -webkit-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+            transform: translateY(-40px);
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
+    -webkit-filter:contrast(2);
+            filter:contrast(2);
+}
+.imgbottomcontainer .img:nth-child(2):hover p{
+display: block;
+}
+.imgbottomcontainer .img:nth-child(3){
+    rotate:3deg;
+    background-image: url(https://www.cinecasero.uy/img/testimonios/06.jpg);
+    background-size: cover;
+    -webkit-transition: all ease 2s;
+    -o-transition: all ease 2s;
+    transition: all ease 2s;
+    -webkit-filter: grayscale(40);
+            filter: grayscale(40);
+
+}
+.imgbottomcontainer .img:nth-child(3):hover{
+    -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
+    -webkit-filter:none;
+            filter:none;
+}
+.imgbottomcontainer .img:nth-child(3):hover p{
+display: block;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1E1E1E;
+}
+.page3container{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+ .page3container .textcontainer{
+    height: 100%;
+    width: 50%;
+    padding-left: 7vw;
+    padding-top: 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2vw;
+}
+.textcontainer h1{
+    color: #9e9b9b;
+    font-size: 10vw;
+    font-family: "font5";
+    line-height: 10vw;
+    font-weight: 200;
+
+
+}
+.textcontainer p{
+    font-family: "font3";
+    /* font-size: 2vw; */
+    color: #e8e6e6;
+}
+.textcontainer .btncontainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+    width: 33vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* background-color: #fff; */
+}
+.btncontainer h4{
+    color: #828282;
+    font-family: "font5";
+    cursor: pointer;
+}
+.btncontainer i{
+    color: #828282;
+    font-size: 1.5vw;
+    -webkit-transition: all ease 2s;
+    -o-transition: all ease 2s;
+    transition: all ease 2s;
+}
+
+.btncontainer:hover i{
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
+    /* cursor: pointer; */
+}
+.page3container .page3imgcontainer{
+    height: 100%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color:#1b1a1a69;
+}
+.page3overlay1{
+    height: 90%;
+    width: 100%;
+    background-color: #24232374;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 99;
+    
+}
+
+
+.page3imgcontainer .imgleft{
+    height:90%;
+    width: 50%;
+    position: relative;
+    top: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3vw;
+}
+.imgleft .img{
+    height: 27vw;
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 2vw;
+    overflow: hidden;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.page3imgcontainer .imgright{
+    height:100%;
+    width: 50%;
+    position: relative;
+    top: -55%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3vw;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.imgright .img{
+    height: 27vw;
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 2vw;
+    overflow: hidden;
+}
+.page3 .container{
+    height: 20vw;
+    width: 100%;
+    /* background-color: #fff; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 7vw;
+}
+   .page3 .container #h1{
+    font-size: 9vw;
+    font-family: "font3";
+    color: #fff;
+    -webkit-animation: move 7s linear infinite forwards;
+            animation: move 7s linear infinite forwards;
+    font-weight: 100;
+    left: 0%;
+
+}
+@-webkit-keyframes move {
+    0%{
+        left: 0%;
+
+    }
+    100%{
+        left: -100%;
+    }
+    
+}
+@keyframes move {
+    0%{
+        left: 0%;
+
+    }
+    100%{
+        left: -100%;
+    }
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.page3 .container2{
+    height: 20vw;
+    width: 100%;
+    margin-top: -5vw;
+ 
+    display: -webkit-box;
+ 
+    display: -ms-flexbox;
+ 
+    display: flex;
+    gap: 2vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+   
+}
+.container2 h1{
+    font-size: 9vw;
+    font-family: "font3";
+    color: #fff;
+    -webkit-animation: move 7s linear infinite forwards;
+            animation: move 7s linear infinite forwards;
+    font-weight: 100;
+    left: 0%;
+
+}
+.page4{
+    height: 100vh;
+    width: 100%;
+    background-color:#1E1E1E;
+    background-image: url(https://www.cinecasero.uy/img/screen.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.page4 .page4overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.page4overlay p{
+    color: #fff;
+    position: relative;
+    top: 100%;
+
+    font-size: 1.4vw;
+    font-family: "font4";
+
+
+}
+.page5{
+    min-height: 140vh;
+    width: 100%;
+    background-color: #1E1E1E;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* gap: 4vw; */
+}
+ .page5 .page5textcontainer{
+    height: 100vh;
+    width: 60%;
+    /* background-color: #fff; */
+    margin-left: 40%;
+}
+.page5 .circlecontainer{
+    height: 100%;
+    width: 45%;
+   margin-left: -30vw;
+
+}
+.circlecontainer img{
+    height: 70vw;
+    width: 70vw;
+}
+.page5textcontainer h1{
+    color: #c9c5c5;
+    font-family: "font5";
+    font-size: 8vw;
+    /* font-weight: 400; */
+    line-height: 9vw;
+}
+.page5textcontainer p{
+    color: #ffff;
+    font-family: "font3";
+    margin-top: 4vw;
+}
+.textcontainertop{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* height: 10vw; */
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 5vw;
+    width: 100%;
+    padding-top: 3vw;
+}
+.textcontainertop img{
+    height: 5vw;
+    width: 10vw;
+
+}
+.textcontainerbottom{
+    /* height: 10vw; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 5vw;
+    width: 100%;
+    padding-top: 3vw;
+}
+.textcontainerbottom img{
+    height: 5vw;
+    width: 7vw;
+
+}
+
+
+.page6{
+    min-height: 400vh;
+    width: 100%;
+    background-color: #DAD9D5;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    background-image: url(https://www.cinecasero.uy/img/tape.png);
+}
+.page6 .video{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 130vw;
+    overflow: hidden;
+}
+.video video{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+}
+.page6 p{
+    font-size: 8vw;
+    font-family: "font5";
+    text-align: center;
+    font-weight: 700;
+    color:#A39F9A;
+    z-index: 99;
+    position: absolute;
+    top: 10vw;
+
+}
+  .page6 .page6overlay{
+    height:100% ;
+    width: 100%;
+    background-color:transparent;
+    position: absolute;
+    top: 30vw;
+    left: 0;
+    
+}
+.page6overlay .img1{
+    height: 35vw;
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    left: 10vw;
+    top: 15vw;
+    z-index: 9;
+    background-image: url(https://www.cinecasero.uy/img/a-1.jpg);
+    background-size: cover;
+}
+
+.page6overlay .img2{
+    height: 30vw;
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    left: 60vw;
+    top: 20vw;
+    z-index: 9;
+    background-image: url(https://www.cinecasero.uy/img/a-2.jpg);
+    background-size: cover;
+}
+
+
+
+.page6overlay .img3{
+    height: 25vw;
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    left: 10vw;
+    top: 20vw;
+    z-index: 9;
+    background-image: url(https://www.cinecasero.uy/img/a-3.jpg);
+    background-size: cover;
+}
+
+
+
+.page6overlay .img4{
+    height: 25vw;
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    left: 60vw;
+    top: 20vw;
+    z-index: 9;
+    background-image: url(https://www.cinecasero.uy/img/a-4.jpg);
+    background-size: cover;
+}
+
+.page7{
+    height: 300vh;
+    width: 100%;
+    background-color: #DAD9D5;
+    position: relative;
+    background-image: url(https://www.cinecasero.uy/img/tape.png);
+    /* background-size: cover; */
+
+}
+.page7 .page7overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+
+    padding-left: 5vw;
+    padding-top: 5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.page7overlay h1{
+    font-family: "font6";
+    font-size: 7vw;
+    line-height: 7vw;
+
+}
+.page7overlay p{
+    margin-top: 2vw;
+    font-family: "font3";
+}
+.page7 .div1{
+    height: 15vw;
+    width: 30vw;
+    /* background-color: #fff; */
+    margin-left: 55vw;
+    position: relative;
+    top: 4vw;
+    padding:2vw;
+}
+.page7 .div1 h3{
+    font-family: "font1";
+    font-size: 2vw;
+
+}
+.page7 .div1 p{
+    margin-top: 1vw;
+    font-family: "font3";
+    font-size: 1.2vw;
+}
+
+
+
+.page7 .div2{
+    height: 15vw;
+    width: 38vw;
+    /* background-color: #fff; */
+    margin-left: 55vw;
+    position: relative;
+    top: 4vw;
+    padding:2vw;
+}
+.page7 .div2 h3{
+    font-family: "font1";
+    font-size: 2vw;
+
+}
+.page7 .div2 p{
+    margin-top: 1vw;
+    font-family: "font3";
+    font-size: 1.2vw;
+}
+
+
+.page7 .div3{
+    height: 15vw;
+    width: 38vw;
+    /* background-color: #fff; */
+    margin-left: 55vw;
+    position: relative;
+    top: 10vw;
+    padding:2vw;
+}
+.page7 .div3 h3{
+    font-family: "font1";
+    font-size: 2vw;
+
+}
+.page7 .div3 p{
+    margin-top: 1vw;
+    font-family: "font3";
+    font-size: 1.2vw;
+}
+
+
+
+.page7 .div4{
+    height: 15vw;
+    width: 38vw;
+    /* background-color: #fff; */
+    margin-left: 55vw;
+    position: relative;
+    top: 18vw;
+    padding:2vw;
+}
+.page7 .div4 h3{
+    font-family: "font1";
+    font-size: 2vw;
+
+}
+.page7 .div4 p{
+    margin-top: 1vw;
+    font-family: "font3";
+    font-size: 1.2vw;
+}
+
+.page7 .div5{
+    height: 15vw;
+    width: 38vw;
+    /* background-color: #fff; */
+    margin-left: 55vw;
+    position: relative;
+    top: 25vw;
+    padding:2vw;
+}
+.page7 .div5 h3{
+    font-family: "font1";
+    font-size: 2vw;
+
+}
+.page7 .div5 p{
+    margin-top: 1vw;
+    font-family: "font3";
+    font-size: 1.2vw;
+}
+
+
+
+.page7 .div6{
+    height: 15vw;
+    width: 38vw;
+    /* background-color: #fff; */
+    margin-left: 55vw;
+    position: relative;
+    top: 30vw;
+    padding:2vw;
+}
+.page7 .div6 h3{
+    font-family: "font1";
+    font-size: 2vw;
+
+}
+.page7 .div6 p{
+    margin-top: 1vw;
+    font-family: "font3";
+    font-size: 1.2vw;
+}
+.page8{
+    height: 150vh;
+    width: 100%;
+    background-color: #DAD9D5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+overflow: hidden ;
+}
+.page8 .page8textcontainer{
+    height: 100%;
+    width: 100%;
+position: relative;
+top: 30vw;
+
+    text-align: center;
+}
+
+.page8textcontainer h1{
+    font-family: "font5";
+    font-size: 6vw;
+    line-height: 6vw;
+}
+.page8textcontainer p{
+    font-family: "font3";
+    margin-top: 3vw;
+}
+.page8textcontainer button{
+    padding:1vw 5vw;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 5vw;
+}
+
+
+
+
+@media (max-width:600px) 
+
+{    .loader{
+    display: none;
+}
+    .page1{
+        height: 100%;
+        width: 100%;
+        background-color:#DBDAD6;
+         
+    }
+    .page1 .nav{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .nav a{
+        display: none;
+    }
+    .nav i{
+        font-size: 7vw;
+    }
+    .nav .circle{
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+    }
+    .page1overlay h4{
+        margin-top: 15vw;
+        font-size: 6vw;
+    }
+    .page1overlay p{
+        margin-top: 3vw;
+font-size: 4vw;
+
+    }
+    .imgcontainer .imgleftcontainer{
+        display: none;
+    }
+    
+    .imgcontainer .imgrightcontainer{
+        display: none;
+    }
+
+    .page2{
+        min-height: 200vw;
+        width: 100%;
+        background-color: #1F1F1F;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 15vw;
+    }
+    .page2imgcontainer{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10vw;
+    }
+    .page2 .imgtopcontainer{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 20vw;
+        overflow: initial;
+    }
+    .imgtopcontainer .img{
+        height: 80vw;
+        width:60%;
+    }
+    .img p{
+        display: block;
+        font-size:20px;
+        color: #cac9c9;
+    }
+    .page2 .imgbottomcontainer{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 20vw;
+        overflow:initial;
+    }
+    .imgbottomcontainer .img{
+        height: 90%;
+        width:35vw;
+    }
+    .page3{
+        height: 100%;
+        width: 100%;
+        background-color: #1F1F1F;
+    }
+    .page3 .page3imgcontainer{
+
+        display: none;
+    }
+    .page3 .textcontainer{
+        height: 100%;
+        width: 100%;
+
+    }
+    .textcontainer h1{
+        font-size:17vw;
+        line-height: 15vw;
+        font-weight: 700;
+    }
+    .textcontainer p{
+        font-size: 4vw;
+        margin-top: 10vw;
+    }
+    .textcontainer .btncontainer{
+        display: none;
+    }
+    
+    .page3 .container h1{
+        font-size: 18vw;
+    }
+    .page3 .container2 h1{
+        font-size: 18vw;
+
+    }
+    .page4{
+        height: 100%;
+        width: 100%;
+
+    }
+    .page4overlay p{
+        font-size: 5vw;
+        color: #817e7e;
+    }
+    .page5{
+        height: 100%;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10vw;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 10vw;
+
+    }
+    .page5 .circlecontainer {
+        height: 50%;
+        width: 100%;
+    }
+    .page5 .circlecontainer img{
+        height: 100%;
+        width: 100%;
+    }
+    .page5 .page5textcontainer{
+        height: 50%;
+        width: 100%;
+        margin-left: 13vw;
+    }
+
+
+    .page5textcontainer h1{
+        font-size: 17vw;
+        line-height: 15vw;
+        
+    }
+    .page5textcontainer p{
+        font-size: 5vw;
+        margin-top: 15vw;
+        color: #6d6c6c;
+        font-weight: 600;
+    }
+    .page5textcontainer .textcontainer{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 10vw;
+        padding-left: 15vw;
+        gap: -5vw;
+    }
+    .page5textcontainer .textcontainertop{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+    }
+    .textcontainertop #img{
+        height: 50%;
+        width: 50%;
+    }
+
+    .page5textcontainer .textcontainerbottom{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        
+    }
+    .textcontainerbottom img{
+        height: 50%;
+        width: 50%;
+    }
+
+
+    .page6{
+        height: 200%;
+        width: 100%;
+
+    }
+    .page6overlay .img1{
+        height: 20%;
+        width: 60%;
+    }
+    .page6overlay .img2{
+        height: 20%;
+        width: 60%;
+    }
+
+    .page7{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .page7 .div{
+        height: 200%;
+        width: 100%;
+        position: relative;
+        top: 50vw;
+        left: -50vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 40vw;
+    }
+    .div .div1{
+        width: 100%;
+        /* margin-left:1%; */
+    }
+    .div .div1 svg{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+    .div .div1 h3{
+        font-size: 4vw;
+    }
+    .div .div1 p{
+        font-size:4.5vw ;
+    }
+
+
+
+    .div .div2{
+        width: 100%;
+        /* margin-left:1%; */
+    }
+    .div .div2 svg{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+    .div .div2 h3{
+        font-size: 4vw;
+    }
+    .div .div2 p{
+        font-size:4.5vw ;
+    }
+
+
+    
+    .div .div3{
+        width: 100%;
+     
+        margin-top: 15%;
+    }
+    .div .div3 svg{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+    .div .div3 h3{
+        font-size: 4vw;
+    }
+    .div .div3 p{
+        font-size:4.5vw ;
+    }
+
+
+
+    .div .div4{
+        width: 100%;
+     
+        margin-top: 15%;
+    }
+    .div .div4 svg{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+    .div .div4 h3{
+        font-size: 4vw;
+    }
+    .div .div4 p{
+        font-size:4.5vw ;
+    }
+
+
+
+    .div .div5{
+        width: 100%;
+     
+        margin-top: 15%;
+    }
+    .div .div5 svg{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+    .div .div5 h3{
+        font-size: 4vw;
+    }
+    .div .div5 p{
+        font-size:4.5vw ;
+    }
+
+
+    
+    .div .div6{
+        width: 100%;
+     
+        margin-top: 15%;
+    }
+    .div .div6 svg{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+    .div .div6 h3{
+        font-size: 4vw;
+    }
+    .div .div6 p{
+        font-size:4.5vw ;
+    }
+    .page8{
+        overflow:hidden;
+        width: 100%;
+        background-color: #DAD9D5;
+    }
+    .page8 .page8textcontainer{
+        position: relative;
+        top: 72%;
+    }
+}

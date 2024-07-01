@@ -36,8 +36,8 @@ ScrollTrigger.refresh();
 function loaderAnimation(){
   document.addEventListener("mousemove",function(dets){
     gsap.to(".cursor",{
-      y:dets.y-300,
-      x:dets.x-600,
+      y:dets.y-400,
+      x:dets.x-700,
       cursor:"pointer",
     })
   })

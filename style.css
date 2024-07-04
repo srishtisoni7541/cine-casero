@@ -1171,8 +1171,11 @@ top: 30vw;
 {    .loader{
     display: none;
 }
+.main{
+    overflow: hidden;
+}
     .page1{
-        height: 100%;
+        /* height: 100vh; */
         width: 100%;
         background-color:#DBDAD6;
          
@@ -1204,8 +1207,8 @@ top: 30vw;
         font-size: 6vw;
     }
     .page1overlay p{
-        margin-top: 3vw;
-font-size: 4vw;
+        margin-top: 5vw;
+font-size: 5vw;
 
     }
     .imgcontainer .imgleftcontainer{
@@ -1215,6 +1218,11 @@ font-size: 4vw;
     .imgcontainer .imgrightcontainer{
         display: none;
     }
+    .imgcontainer .img4center{
+        height: 70vw;
+        width: 70vw;
+    }
+    
 
     .page2{
         min-height: 200vw;
@@ -1228,6 +1236,7 @@ font-size: 4vw;
             -ms-flex-direction: column;
                 flex-direction: column;
         gap: 15vw;
+        margin-top: -120%;
     }
     .page2imgcontainer{
         display: -webkit-box;
@@ -1275,7 +1284,7 @@ font-size: 4vw;
         width:35vw;
     }
     .page3{
-        height: 100%;
+        height:70vh;
         width: 100%;
         background-color: #1F1F1F;
     }
@@ -1292,10 +1301,11 @@ font-size: 4vw;
         font-size:17vw;
         line-height: 15vw;
         font-weight: 700;
+        margin-top: 15vw;
     }
     .textcontainer p{
-        font-size: 4vw;
-        margin-top: 10vw;
+        font-size: 6vw;
+        margin-top: 14vw;
     }
     .textcontainer .btncontainer{
         display: none;
@@ -1303,9 +1313,11 @@ font-size: 4vw;
     
     .page3 .container h1{
         font-size: 18vw;
+        display: none;
     }
     .page3 .container2 h1{
-        font-size: 18vw;
+        font-size: 20vw;
+        display: none;
 
     }
     .page4{
@@ -1409,8 +1421,9 @@ font-size: 4vw;
 
 
     .page6{
-        height: 200%;
+        height: 200vh;
         width: 100%;
+        display: none;
 
     }
     .page6overlay .img1{
@@ -1426,6 +1439,7 @@ font-size: 4vw;
         height: 100%;
         width: 100%;
         text-align: center;
+        padding-top: 10vw;
     }
     .page7 .div{
         height: 200%;
@@ -1441,9 +1455,12 @@ font-size: 4vw;
             -ms-flex-direction: column;
                 flex-direction: column;
         gap: 40vw;
+        padding: 4vw;
+        padding-right: 7vw;
     }
     .div .div1{
         width: 100%;
+        margin-top: -55vw;
         /* margin-left:1%; */
     }
     .div .div1 svg{
@@ -1463,6 +1480,7 @@ font-size: 4vw;
 
     .div .div2{
         width: 100%;
+        margin-top:50%;
         /* margin-left:1%; */
     }
     .div .div2 svg{
@@ -1483,7 +1501,7 @@ font-size: 4vw;
     .div .div3{
         width: 100%;
      
-        margin-top: 15%;
+        margin-top:50%;
     }
     .div .div3 svg{
 
@@ -1503,7 +1521,7 @@ font-size: 4vw;
     .div .div4{
         width: 100%;
      
-        margin-top: 15%;
+        margin-top:50%;
     }
     .div .div4 svg{
 
@@ -1523,7 +1541,7 @@ font-size: 4vw;
     .div .div5{
         width: 100%;
      
-        margin-top: 15%;
+        margin-top: 50%;
     }
     .div .div5 svg{
 
@@ -1543,7 +1561,7 @@ font-size: 4vw;
     .div .div6{
         width: 100%;
      
-        margin-top: 15%;
+        margin-top: 50%;
     }
     .div .div6 svg{
 
@@ -1556,6 +1574,9 @@ font-size: 4vw;
     }
     .div .div6 p{
         font-size:4.5vw ;
+    }
+    .page7overlay{
+    display: none;
     }
     .page8{
         overflow:hidden;

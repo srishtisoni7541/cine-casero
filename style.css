@@ -1,19 +1,5 @@
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
-
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 
 *{
@@ -1175,9 +1161,10 @@ top: 30vw;
     overflow: hidden;
 }
     .page1{
-        /* height: 100vh; */
+    
         width: 100%;
         background-color:#DBDAD6;
+
          
     }
     .page1 .nav{
@@ -1205,10 +1192,12 @@ top: 30vw;
     .page1overlay h4{
         margin-top: 15vw;
         font-size: 6vw;
+        /* display: none; */
     }
     .page1overlay p{
         margin-top: 5vw;
 font-size: 5vw;
+/* display:none; */
 
     }
     .imgcontainer .imgleftcontainer{
@@ -1282,6 +1271,9 @@ font-size: 5vw;
     .imgbottomcontainer .img{
         height: 90%;
         width:35vw;
+    }
+    .page2 h2{
+        display: none;
     }
     .page3{
         height:70vh;
@@ -1585,6 +1577,7 @@ font-size: 5vw;
     }
     .page8 .page8textcontainer{
         position: relative;
-        top: 72%;
+        top: 65%;
+        padding: 5vw;
     }
 }

@@ -682,29 +682,29 @@ display: block;
     font-size: 9vw;
     font-family: "font3";
     color: #fff;
-    -webkit-animation: move 7s linear infinite forwards;
-            animation: move 7s linear infinite forwards;
+    -webkit-animation: move 10s linear infinite forwards;
+            animation: move 10s linear infinite forwards;
     font-weight: 100;
     left: 0%;
 
 }
-@-webkit-keyframes move {
+@keyframes move {
     0%{
-        left: 0%;
+        transform: translateX(0%);
 
     }
     100%{
-        left: -100%;
+    transform: translateX(-100%);
     }
     
 }
-@keyframes move {
+@keyframes move2 {
     0%{
-        left: 0%;
+    transform: translateX(-200%);
 
     }
     100%{
-        left: -100%;
+        transform: translateX(100%);
     }
     
 }
@@ -734,8 +734,8 @@ display: block;
     font-size: 9vw;
     font-family: "font3";
     color: #fff;
-    -webkit-animation: move 7s linear infinite forwards;
-            animation: move 7s linear infinite forwards;
+    -webkit-animation: move2 16s linear infinite forwards;
+            animation: move2 16s linear infinite forwards;
     font-weight: 100;
     left: 0%;
 

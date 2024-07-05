@@ -153,6 +153,9 @@ function page3Animation(){
     y:500,
     duration:2,
   },"elem")
+
+
+ 
 }
 
 page3Animation();
